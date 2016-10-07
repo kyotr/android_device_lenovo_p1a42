@@ -6,6 +6,7 @@ TARGET_OTA_ASSERT_DEVICE := p1a42,passion_row
 
 # Kernel
 TARGET_KERNEL_CONFIG := passion_row-user_defconfig
+FORCE_32_BIT := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41940355
