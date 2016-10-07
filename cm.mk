@@ -12,7 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit device configuration
 $(call inherit-product, device/lenovo/p1a42/full_p1a42.mk)
+$(call inherit-product, device/lenovo/msm8916-common/msm8916.mk)
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+# Nfc
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := p1a42
